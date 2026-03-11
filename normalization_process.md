@@ -1,3 +1,5 @@
+# Original Table
+
 | emp_no | emp_name        | job_title            | hire_date  | salary_cad | dept_code | dept_name         | dept_location |
 | ------ | --------------- | -------------------- | ---------- | ---------- | --------- | ----------------- | ------------- |
 | 1001   | Lucas Romero    | Gameplay Programmer  | 2021-03-15 | 92000      | DEV       | Development       | Vancouver     |
@@ -10,3 +12,21 @@
 | 1008   | Mia Johnson     | Marketing Specialist | 2023-04-01 | 67000      | MKT       | Marketing         | Toronto       |
 | 1009   | Ethan Garcia    | HR Coordinator       | 2021-08-30 | 64000      | HR        | Human Resources   | Toronto       |
 | 1010   | Isabella Nguyen | QA Analyst           | 2020-12-05 | 60000      | QA        | Quality Assurance | Vancouver     |
+
+
+
+# Problems with this table:
+
+DEV | Development | Vancouver
+
+This table contains repeated department information for example:
+
+* DEV.
+
+* Development.
+
+* Vancouver.
+
+The same problem happens with other departments as well. This causes data redundancy and can create anomalies.
+
+
