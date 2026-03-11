@@ -1,0 +1,42 @@
+USE pixelforge_studios;
+
+INSERT INTO departments (dept_code, dept_name, dept_location) VALUES
+('DEV', 'Development', 'Vancouver'),
+('ART', 'Art Department', 'Montreal'),
+('QA', 'Quality Assurance', 'Vancouver'),
+('GDS', 'Game Design', 'Toronto'),
+('AUD', 'Audio', 'Montreal'),
+('MKT', 'Marketing', 'Toronto'),
+('HR', 'Human Resources', 'Toronto');
+
+INSERT INTO employees (emp_no, emp_name, job_title, hire_date, salary_cad, dept_code) VALUES
+(1001, 'Lucas Romero', 'Gameplay Programmer', '2021-03-15', 92000.00, 'DEV'),
+(1002, 'Sofia Chen', 'Character Artist', '2022-06-10', 78000.00, 'ART'),
+(1003, 'Daniel Park', 'QA Tester', '2023-01-09', 56000.00, 'QA'),
+(1004, 'Emma Rossi', 'Game Designer', '2020-09-21', 88000.00, 'GDS'),
+(1005, 'Noah Patel', 'Audio Designer', '2021-11-03', 72000.00, 'AUD'),
+(1006, 'Ava Kim', 'Backend Programmer', '2019-07-17', 105000.00, 'DEV'),
+(1007, 'Liam Dubois', 'UI Artist', '2022-02-14', 74000.00, 'ART'),
+(1008, 'Mia Johnson', 'Marketing Specialist', '2023-04-01', 67000.00, 'MKT'),
+(1009, 'Ethan Garcia', 'HR Coordinator', '2021-08-30', 64000.00, 'HR'),
+(1010, 'Isabella Nguyen', 'QA Analyst', '2020-12-05', 60000.00, 'QA'),
+(1011, 'Mateo Silva', 'Engine Programmer', '2018-05-22', 112000.00, 'DEV'),
+(1012, 'Chloe Martin', 'Concept Artist', '2021-01-18', 76000.00, 'ART'),
+(1013, 'Benjamin Lee', 'Level Designer', '2022-09-12', 82000.00, 'GDS'),
+(1014, 'Aria Thompson', 'Sound Engineer', '2020-06-25', 73000.00, 'AUD'),
+(1015, 'Samuel Brown', 'Recruitment Specialist', '2023-03-08', 62000.00, 'HR'),
+(1016, 'Grace Wilson', 'Community Manager', '2021-10-11', 69000.00, 'MKT'),
+(1017, 'Logan White', 'QA Tester', '2022-11-19', 55000.00, 'QA'),
+(1018, 'Ella Martinez', '3D Artist', '2020-04-07', 81000.00, 'ART'),
+(1019, 'James Anderson', 'Systems Programmer', '2019-02-28', 108000.00, 'DEV'),
+(1020, 'Harper Scott', 'Narrative Designer', '2021-07-13', 84000.00, 'GDS'),
+(1021, 'Alexander Young', 'Audio Programmer', '2022-01-24', 91000.00, 'AUD'),
+(1022, 'Amelia King', 'Brand Manager', '2019-09-05', 86000.00, 'MKT'),
+(1023, 'Michael Hall', 'HR Manager', '2018-12-10', 90000.00, 'HR'),
+(1024, 'Evelyn Allen', 'Technical Artist', '2023-05-16', 79000.00, 'ART'),
+(1025, 'William Perez', 'AI Programmer', '2020-08-20', 110000.00, 'DEV'),
+(1026, 'Abigail Wright', 'Game Producer', '2019-11-14', 98000.00, 'GDS'),
+(1027, 'David Torres', 'Localization QA Tester', '2021-12-02', 58000.00, 'QA'),
+(1028, 'Scarlett Baker', 'Voice Coordinator', '2022-07-21', 70000.00, 'AUD'),
+(1029, 'Joseph Rivera', 'Digital Marketing Analyst', '2020-03-30', 71000.00, 'MKT'),
+(1030, 'Victoria Campbell', 'People Operations Specialist', '2023-02-27', 63000.00, 'HR');
