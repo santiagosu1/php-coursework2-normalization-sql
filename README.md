@@ -21,7 +21,7 @@ The project includes:
 1. Open phpMyAdmin or MySQL CLI
 2. Create a database or run `schema.sql`
 3. Run `data.sql`
-4. Run `queries.sql` to test the required queries
+4. Run `queries.sql` to test the required queries.
 
 ## Database Topic
 This database is based on job positions in a video game company.
