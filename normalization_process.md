@@ -1,4 +1,8 @@
-# Original Table
+# Database Normalization Process
+## PixelForge Studios Employee Database
+Coursework 2 – Normalization & SQL Queries
+
+### Original Table
 
 | emp_no | emp_name        | job_title            | hire_date  | salary_cad | dept_code | dept_name         | dept_location |
 | ------ | --------------- | -------------------- | ---------- | ---------- | --------- | ----------------- | ------------- |
