@@ -244,6 +244,23 @@ Foreign key:
 
 * dept_code FK
 
+### Final Schema
+
+employees(
+  emp_no PK,
+  emp_name,
+  job_title,
+  hire_date,
+  salary_cad,
+  dept_code FK
+)
+
+departments(
+  dept_code PK,
+  dept_name,
+  dept_location
+)
+
 ## Relationship:
 
 * employees.dept_code -> departments.dept_code
