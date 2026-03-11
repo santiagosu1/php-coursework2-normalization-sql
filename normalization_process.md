@@ -15,7 +15,7 @@
 
 
 
-## Problems with this table:
+# Problems with this table
 
 DEV | Development | Vancouver
 
@@ -28,5 +28,81 @@ This table contains repeated department information for example:
 * Vancouver.
 
 The same problem happens with other departments as well. This causes data redundancy and can create anomalies.
+
+# Update Anomaly
+
+If the location of the Development department changes from Vancouver to Toronto, every row with department code DEV must be updated.
+
+# Insert Anomaly
+
+A new department cannot be added unless at least one employee is assigned to it.
+
+# Delete Anomaly
+
+If the last employee in a department is deleted, the department information is also lost.
+
+# Attributes
+
+The attributes in the raw table are:
+
+* emp_no
+
+* emp_name
+
+* job_title
+
+* hire_date
+
+* salary_cad
+
+* dept_code
+
+* dept_name
+
+* dept_location
+
+# Candidate Key
+
+In this table, the candidate key is:
+
+* emp_no
+
+Each employee has a unique employee number.
+
+# Functional Dependencies
+
+The main functional dependencies are:
+
+## Employee-related dependencies
+
+* emp_no -> emp_name
+
+* emp_no -> job_title
+
+* emp_no -> hire_date
+
+* emp_no -> salary_cad
+
+* emp_no -> dept_code
+
+# Department-related dependencies
+
+* dept_code -> dept_name
+
+* dept_code -> dept_location
+
+## Transitive dependency
+
+Since:
+
+* emp_no -> dept_code
+
+* dept_code -> dept_name, dept_location
+
+Then:
+
+* emp_no -> dept_name, dept_location
+
+* This is a transitive dependency, which means the table is not in 3NF.
 
 
